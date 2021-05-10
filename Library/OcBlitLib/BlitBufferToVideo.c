@@ -140,7 +140,7 @@ BlitLibBufferToVideo90 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination + Index2 * PixelsPerScanLine - Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
@@ -160,7 +160,7 @@ BlitLibBufferToVideo90 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination + Index2 * PixelsPerScanLine - Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
@@ -180,7 +180,7 @@ BlitLibBufferToVideo90 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination + Index2 * PixelsPerScanLine - Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
@@ -342,7 +342,7 @@ BlitLibBufferToVideo270 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination - Index2 * PixelsPerScanLine + Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
@@ -362,7 +362,7 @@ BlitLibBufferToVideo270 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination - Index2 * PixelsPerScanLine + Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
@@ -382,7 +382,7 @@ BlitLibBufferToVideo270 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination - Index2 * PixelsPerScanLine + Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
@@ -402,7 +402,7 @@ BlitLibBufferToVideo270 (
               UINT32 *A = Source + Index * DeltaPixels + Index2;
               UINT32 *B = Destination - Index2 * PixelsPerScanLine + Index;
               for (UINTN BlockIndex = 0; BlockIndex < BlockWidth; BlockIndex++) {
-                #ifdef __clang__
+                #if 0 /* Old compilers cannot unroll, disable for now */
                 #pragma clang loop unroll(full)
                 #endif
                 for (UINTN BlockIndex2 = 0; BlockIndex2 < BlockWidth; BlockIndex2++) {
